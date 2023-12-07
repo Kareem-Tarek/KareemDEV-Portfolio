@@ -41,12 +41,12 @@ try {
     $mail->Host       = 'smtp.host_provider_here.com';  //Set the SMTP server to send through (e.g. google, outlook, etc.)
     $mail->SMTPAuth   = true;                           //Enable SMTP authentication
     $mail->Username   = 'your_email@host_provider.com'; //SMTP username
-    $mail->Password   = 'your_auth_password_here';      //SMTP password
+    $mail->Password   = 'your_auth_password_here';      //SMTP password (for example, if you are using "gmail" as the host provider then that's not your personal password, it's a password that you made in your google account for external apps "app passwords" like the current PHP script)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    //Enable implicit TLS encryption
     $mail->Port       = 465;                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('kareemtarekpk@gmail.com', $sender_name); //sender
+    $mail->setFrom('your_email@host_provider_here.com', $sender_name); //sender
     $mail->addAddress($recipient_email); //recipient
     // $mail->addReplyTo('info@example.com', 'Information');
 
@@ -67,9 +67,9 @@ try {
     exit;
     // echo 'Message has been sent';
 } catch (Exception $e) {
-    // echo "Message could not be sent. Mailer Error: <span style='color: red;'>{$mail->ErrorInfo}</span>";
     // Set error message in session
     $_SESSION['error_message'] = "\"<span style='font-weight: bold; text-decoration: underline;'>$sender_name</span>\", your mail hasn't been sent successfully to \"<span style='font-weight: bold; text-decoration: underline;'>$recipient_email</span>\"";
     header("Location: http://localhost:8000/index.php#contact"); //../index.php
     exit;
+    // echo "Message could not be sent. Mailer Error: <span style='color: red;'>{$mail->ErrorInfo}</span>";
 }
