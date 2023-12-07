@@ -36,14 +36,14 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'kareemtarekpk@gmail.com';                     //SMTP username
-    $mail->Password   = 'your_auth_password_here';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;              //Enable verbose debug output
+    $mail->isSMTP();                                    //Send using SMTP
+    $mail->Host       = 'smtp.host_provider_here.com';  //Set the SMTP server to send through (e.g. google, outlook, etc.)
+    $mail->SMTPAuth   = true;                           //Enable SMTP authentication
+    $mail->Username   = 'your_email@host_provider.com'; //SMTP username
+    $mail->Password   = 'your_auth_password_here';      //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    //Enable implicit TLS encryption
+    $mail->Port       = 465;                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('kareemtarekpk@gmail.com', $sender_name); //sender
@@ -51,7 +51,7 @@ try {
     // $mail->addReplyTo('info@example.com', 'Information');
 
     //Attachments
-    // $mail->addAttachment('../images/kareemtarekdev.jpg', 'KareemDEV.jpg');
+    // $mail->addAttachment('../uploads/about_kareem_tarek_dev-02.jpg', 'KareemDEV.jpg');
 
     //Content
     $mail->isHTML(false);
