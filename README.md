@@ -1,12 +1,12 @@
 # KareemDEV-Portfolio
 
-## You could change "index.php" to "index.html", and the portfolio will work serverless
-    => But the "mail/send_email.php" won't work because HTML is just static! And also 
+## You could change "index.php" to "index.html", and the portfolio will work serverless =>...
+    But the "mail/send_email.php" won't work because HTML is just static! And also 
     by change it from ".php" to ".html", that might cause some problems in the UI.
 
-## Important =>  You should better run the portfolio (index.php) with PHP server like that "php -S localhost:8000" not as a html file 
-                But you need to have "Composer" & "PHP" installed first on your 
-                machine of course.
+## Important =>  You should better run the portfolio (index.php) with PHP server like that "php -S localhost:8000" not as a html file  =>...
+    But you need to have "Composer" & "PHP" installed first on your 
+    machine of course.
 
 ## How to run my portfolio project (KareemDEV Portfolio) on your localhost?
     1) Install Composer (https://getcomposer.org/download/) PHP (https://windows.php.net/download) on your local machine
