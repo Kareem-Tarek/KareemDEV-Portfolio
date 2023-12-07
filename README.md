@@ -1,7 +1,7 @@
 # KareemDEV-Portfolio
 
 ### You could change `index.php` to `index.html`, and the portfolio will work serverless =>...
-    But the "mail/send_email.php" won't work because HTML is just static! And also 
+    But the "`mail/send_email.php`" [which contains the PHPMailer (`https://github.com/PHPMailer/PHPMailer`) script] won't work because HTML is just static! And also 
     by change it from ".php" to ".html", that might cause some problems in the UI.
 
 ### Important =>  You should better run the portfolio (`index.php`) with PHP server like that `php -S localhost:8000` not as a html file  =>...
