@@ -38,15 +38,15 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;              //Enable verbose debug output
     $mail->isSMTP();                                    //Send using SMTP
-    $mail->Host       = 'smtp.host_provider_here.com';  //Set the SMTP server to send through (e.g. google, outlook, etc.)
+    $mail->Host       = 'smtp.gmail.com';  //Set the SMTP server to send through (e.g. google, outlook, etc.)
     $mail->SMTPAuth   = true;                           //Enable SMTP authentication
-    $mail->Username   = 'your_email@host_provider.com'; //SMTP username
-    $mail->Password   = 'your_auth_password_here';      //SMTP password (for example, if you are using "gmail" as the host provider then that's not your personal password, it's a password that you made in your google account for external apps "app passwords" like the current PHP script)
+    $mail->Username   = 'kareemtarekpk@gmail.com'; //SMTP username
+    $mail->Password   = 'qkszlinxnebmtstv';      //SMTP password (for example, if you are using "gmail" as the host provider then that's not your personal password, it's a password that you made in your google account for external apps "app passwords" like the current PHP script)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    //Enable implicit TLS encryption
     $mail->Port       = 465;                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('your_email@host_provider_here.com', $sender_name); //sender
+    $mail->setFrom('kareemtarekpk@gmail.com', $sender_name); //sender
     $mail->addAddress($recipient_email); //recipient
     // $mail->addReplyTo('info@example.com', 'Information');
 
